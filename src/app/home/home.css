@@ -1,0 +1,262 @@
+.hero {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-content h1 {
+  margin: 0 0 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #163d2e;
+}
+
+.hero-content p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #163d2e;
+}
+
+.section-header a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #163d2e;
+  text-decoration: none;
+}
+
+.section-header a:visited {
+  color: #163d2e;
+}
+
+.section-header a:hover {
+  color: #b96f45;
+  text-decoration: none;
+}
+
+.book-section {
+  width: 1600px;
+  max-width: calc(100% - 80px);
+  margin: 70px auto;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 65px;
+}
+
+.book-card {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d8d3c9;
+  padding: 15px;
+}
+
+.book-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.book-card h3 {
+  margin: 0 0 6px;
+  height: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #2b2926;
+}
+
+.book-author {
+  margin: 0 0 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b4f3b;
+}
+
+.book-price {
+  margin: 0 0 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #163d2e;
+}
+
+
+.book-card button {
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background-color: #163d2e;
+  color: #f8f6ef;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.book-card button:hover {
+  background-color: #b96f45;
+}
+
+.book-carousel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-carousel-window {
+  flex: 1;
+  overflow: hidden;
+}
+
+.book-carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.book-page {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 35px;
+}
+
+.slider-btn {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #d8d3c9;
+  border-radius: 50%;
+  background-color: #163d2e;
+  color: #f8f6ef;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover:not(:disabled) {
+  background-color: #386e5a;
+  color: #f8f6ef;
+}
+
+.slider-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (max-width: 1200px) {
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-content {
+    left: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .book-section {
+    max-width: calc(100% - 40px);
+    margin: 60px auto;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+
+  .book-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .book-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 218 / 320;
+  }
+
+  .book-card h3 {
+    font-size: 13px;
+  }
+
+  .book-author {
+    font-size: 11px;
+  }
+
+  .book-price {
+    font-size: 14px;
+  }
+
+  .book-card button {
+    font-size: 11px;
+  }
+
+}

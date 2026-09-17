@@ -1,0 +1,407 @@
+<section class="hero">
+
+  <div class="hero-content">
+    <h1>Books for<br>Curious Minds.</h1>
+
+    <p>Discover the magic between the pages.</p>
+  </div>
+
+  <div class="hero-image">
+    <img src="G&CBanner.png" alt="Books for Curious Minds">
+  </div>
+
+</section>
+
+<section class="book-section">
+
+  <div class="section-header">
+    <h2>New Arrivals</h2>
+    <a href="#">View All</a>
+  </div>
+
+<div class="book-carousel">
+
+  <button
+    class="slider-btn prev"
+    type="button"
+    (click)="previousNewArrivals()"
+    [disabled]="newArrivalsPage === 0">
+    ‹
+  </button>
+
+  <div class="book-carousel-window">
+
+    <div
+      class="book-carousel-track"
+      [style.transform]="'translateX(-' + (newArrivalsPage * 100) + '%)'">
+
+      <!-- PAGE 1 -->
+      <div class="book-page">
+
+      <div class="book-card">
+        <a routerLink="/book-details">
+          <img src="the-midnight-library.png" alt="The Midnight Library">
+        </a>
+        <h3>The Midnight Library</h3>
+        <p class="book-author">Matt Haig</p>
+        <p class="book-price">₱650.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="divine-rivals.png" alt="Divine Rivals">
+        <h3>Divine Rivals</h3>
+        <p class="book-author">Rebecca Ross</p>
+        <p class="book-price">₱720.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="the-seven-year-slip.png" alt="The Seven Year Slip">
+        <h3>The Seven Year Slip</h3>
+        <p class="book-author">Ashley Poston</p>
+        <p class="book-price">₱680.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="a-study-in-drowning.png" alt="A Study in Drowning">
+        <h3>A Study in Drowning</h3>
+        <p class="book-author">Ava Reid</p>
+        <p class="book-price">₱690.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="the-night-circus.png" alt="The Night Circus">
+        <h3>The Night Circus</h3>
+        <p class="book-author">Erin Morgenster</p>
+        <p class="book-price">₱750.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+    </div>
+
+      <!-- PAGE 2 -->
+      <div class="book-page">
+
+        <div class="book-card">
+          <img src="the-book-thief.png" alt="The Book Thief">
+          <h3>The Book Thief</h3>
+          <p class="book-author">Markus Zusak</p>
+          <p class="book-price">₱680.00</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="normal-people.png" alt="Normal People">
+          <h3>Normal People</h3>
+          <p class="book-author">Sally Rooney</p>
+          <p class="book-price">₱690.00</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="the-invisible-life.png" alt="The Invisible Life of Addie LaRue">
+          <h3>The Invisible Life of Addie LaRue</h3>
+          <p class="book-author">V.E. Schwab</p>
+          <p class="book-price">₱720.00</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="before-the-coffee-gets-cold.png" alt="Before the Coffee Gets Cold">
+          <h3>Before the Coffee Gets Cold</h3>
+          <p class="book-author">Toshikazu Kawaguchi</p>
+          <p class="book-price">₱650.00</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <div class="book-card">
+          <img src="the-stationery-shop.png" alt="The Stationery Shop">
+          <h3>The Stationery Shop</h3>
+          <p class="book-author">Marjan Kamali</p>
+          <p class="book-price">₱710.00</p>
+          <button type="button">Add to Cart</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <button
+    class="slider-btn next"
+    type="button"
+    (click)="nextNewArrivals()"
+    [disabled]="newArrivalsPage === 1">
+    ›
+  </button>
+
+</div>
+
+</section>
+
+<section class="book-section">
+
+  <div class="section-header">
+    <h2>Trending Now</h2>
+    <a href="#">View All</a>
+  </div>
+
+  <div class="book-carousel">
+
+    <button
+      class="slider-btn prev"
+      type="button"
+      (click)="previousTrending()"
+      [disabled]="trendingPage === 0">
+      ‹
+    </button>
+
+    <div class="book-carousel-window">
+
+      <div
+        class="book-carousel-track"
+        [style.transform]="'translateX(-' + (trendingPage * 100) + '%)'">
+
+        <!-- PAGE 1 -->
+        <div class="book-page">
+
+                <div class="book-card">
+        <img src="fourth-wing.png" alt="Fourth Wing">
+        <h3>Fourth Wing</h3>
+        <p class="book-author">Rebecca Yarros</p>
+        <p class="book-price">₱780.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+
+      <div class="book-card">
+        <img src="the-cruel-prince.png" alt="The Cruel Prince">
+        <h3>The Cruel Prince</h3>
+        <p class="book-author">Holly Black</p>
+        <p class="book-price">₱650.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+
+      <div class="book-card">
+        <img src="the-love-hypothesis.png" alt="The Love Hypothesis">
+        <h3>The Love Hypothesis</h3>
+        <p class="book-author">Ali Hazelwood</p>
+        <p class="book-price">₱680.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+
+      <div class="book-card">
+        <img src="pride-and-prejudice.png" alt="Pride and Prejudice">
+        <h3>Pride and Prejudice</h3>
+        <p class="book-author">Jane Austen</p>
+        <p class="book-price">₱690.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+
+      <div class="book-card">
+        <img src="powerless.png" alt="Powerless">
+        <h3>Powerless</h3>
+        <p class="book-author">Lauren Roberts</p>
+        <p class="book-price">₱720.00</p>
+        <button type="button">Add to Cart</button>
+      </div>
+
+
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="book-page">
+
+          <div class="book-card">
+            <img src="caraval.png" alt="Caraval">
+            <h3>Caraval</h3>
+            <p class="book-author">Stephanie Garber</p>
+            <p class="book-price">₱700.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="once-upon-a-broken-heart.png" alt="Once Upon a Broken Heart">
+            <h3>Once Upon a Broken Heart</h3>
+            <p class="book-author">Stephanie Garber</p>
+            <p class="book-price">₱730.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-inheritance-games.png" alt="The Inheritance Games">
+            <h3>The Inheritance Games</h3>
+            <p class="book-author">Jennifer Lynn Barnes</p>
+            <p class="book-price">₱680.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="red-white-royal-blue.png" alt="Red White & Royal Blue">
+            <h3>Red, White & Royal Blue</h3>
+            <p class="book-author">Casey McQuiston</p>
+            <p class="book-price">₱690.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-ballad-of-songbirds-and-snakes.png" alt="The Ballad of Songbirds and Snakes">
+            <h3>The Ballad of Songbirds and Snakes</h3>
+            <p class="book-author">Suzanne Collins</p>
+            <p class="book-price">₱750.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button
+      class="slider-btn next"
+      type="button"
+      (click)="nextTrending()"
+      [disabled]="trendingPage === 1">
+      ›
+    </button>
+
+  </div>
+
+</section>
+
+<section class="book-section">
+
+  <div class="section-header">
+    <h2>Best Sellers</h2>
+    <a href="#">View All</a>
+  </div>
+
+  <div class="book-carousel">
+
+    <button
+      class="slider-btn prev"
+      type="button"
+      (click)="previousBestSellers()"
+      [disabled]="bestSellersPage === 0">
+      ‹
+    </button>
+
+    <div class="book-carousel-window">
+
+      <div
+        class="book-carousel-track"
+        [style.transform]="'translateX(-' + (bestSellersPage * 100) + '%)'">
+
+        <!-- PAGE 1 -->
+        <div class="book-page">
+
+          <div class="book-card">
+            <img src="harry-potter.png" alt="Harry Potter and the Philosopher's Stone">
+            <h3>Harry Potter and the Philosopher's Stone</h3>
+            <p class="book-author">J.K. Rowling</p>
+            <p class="book-price">₱750.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-house.png" alt="The House in the Cerulean Sea">
+            <h3>The House in the Cerulean Sea</h3>
+            <p class="book-author">T.J. Klune</p>
+            <p class="book-price">₱680.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-alchemist.png" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p class="book-author">Paulo Coelho</p>
+            <p class="book-price">₱550.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="atomic-habits.png" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p class="book-author">James Clear</p>
+            <p class="book-price">₱690.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-seven-husbands.png" alt="The Seven Husbands of Evelyn Hugo">
+            <h3>The Seven Husbands of Evelyn Hugo</h3>
+            <p class="book-author">Taylor Jenkins Reid</p>
+            <p class="book-price">₱720.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="book-page">
+
+          <div class="book-card">
+            <img src="it-ends-with-us.png" alt="It Ends with Us">
+            <h3>It Ends with Us</h3>
+            <p class="book-author">Colleen Hoover</p>
+            <p class="book-price">₱690.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-perks-of-being-a-wallflower.png" alt="The Perks of Being a Wallflower">
+            <h3>The Perks of Being a Wallflower</h3>
+            <p class="book-author">Stephen Chbosky</p>
+            <p class="book-price">₱650.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-fault-in-our-stars.png" alt="The Fault in Our Stars">
+            <h3>The Fault in Our Stars</h3>
+            <p class="book-author">John Green</p>
+            <p class="book-price">₱680.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-hunger-games.png" alt="The Hunger Games">
+            <h3>The Hunger Games</h3>
+            <p class="book-author">Suzanne Collins</p>
+            <p class="book-price">₱720.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+          <div class="book-card">
+            <img src="the-little-prince.png" alt="The Little Prince">
+            <h3>The Little Prince</h3>
+            <p class="book-author">Antoine de Saint-Exupéry</p>
+            <p class="book-price">₱550.00</p>
+            <button type="button">Add to Cart</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button
+      class="slider-btn next"
+      type="button"
+      (click)="nextBestSellers()"
+      [disabled]="bestSellersPage === 1">
+      ›
+    </button>
+
+  </div>
+
+</section>
