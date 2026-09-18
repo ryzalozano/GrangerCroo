@@ -1,16 +1,16 @@
 <section class="book-details">
 
   <div class="book-image">
-    <img src="the-alchemist.png" alt="The Alchemist">
+    <img [src]="book.image" [alt]="book.title">
   </div>
 
   <div class="book-info">
 
-    <h1>The Alchemist</h1>
+    <h1>{{ book.title }}</h1>
 
-    <p class="author">Paulo Coelho</p>
+    <p class="author">{{ book.author }}</p>
 
-    <p class="price">₱499</p>
+    <p class="price">₱{{ book.price }}</p>
 
     <div class="book-actions">
 
@@ -21,9 +21,13 @@
       </button>
 
       <div class="quantity">
-        <button type="button">−</button>
-        <span>1</span>
-        <button type="button">+</button>
+
+        <button type="button" (click)="decreaseQuantity()">−</button>
+
+        <span>{{ quantity }}</span>
+
+        <button type="button" (click)="increaseQuantity()">+</button>
+
       </div>
 
       <button type="button" class="add-cart">
@@ -40,14 +44,8 @@
 
     <div class="description-line"></div>
 
-    <p>
-      Paulo Coelho's masterpiece tells the mystical story of Santiago,
-      an Andalusian shepherd boy who yearns to travel in search of a
-      worldly treasure. His quest will lead him to riches far different—
-      and far more satisfying—than he ever imagined. Santiago's journey
-      teaches us about the essential wisdom of listening to our hearts,
-      of recognizing opportunity and learning to read the omens strewn
-      along life's path, and, most importantly, to follow our dreams.
+    <p class="description-text">
+      {{ book.description }}
     </p>
 
   </div>

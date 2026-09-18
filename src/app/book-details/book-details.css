@@ -148,6 +148,10 @@
   color: #2b2926;
 }
 
+.description-text {
+  white-space: pre-line;
+}
+
 @media (max-width: 1200px) {
 
   .book-details {

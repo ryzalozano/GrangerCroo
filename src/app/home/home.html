@@ -39,7 +39,7 @@
       <div class="book-page">
 
       <div class="book-card">
-        <a routerLink="/book-details">
+        <a [routerLink]="['/book-details', 1]">
           <img src="the-midnight-library.png" alt="The Midnight Library">
         </a>
         <h3>The Midnight Library</h3>
@@ -49,7 +49,9 @@
       </div>
 
       <div class="book-card">
-        <img src="divine-rivals.png" alt="Divine Rivals">
+        <a [routerLink]="['/book-details', 2]">
+          <img src="divine-rivals.png" alt="Divine Rivals">
+        </a>
         <h3>Divine Rivals</h3>
         <p class="book-author">Rebecca Ross</p>
         <p class="book-price">₱720.00</p>
@@ -57,7 +59,9 @@
       </div>
 
       <div class="book-card">
-        <img src="the-seven-year-slip.png" alt="The Seven Year Slip">
+        <a [routerLink]="['/book-details', 3]">
+          <img src="the-seven-year-slip.png" alt="The Seven Year Slip">
+        </a>
         <h3>The Seven Year Slip</h3>
         <p class="book-author">Ashley Poston</p>
         <p class="book-price">₱680.00</p>
@@ -65,7 +69,9 @@
       </div>
 
       <div class="book-card">
-        <img src="a-study-in-drowning.png" alt="A Study in Drowning">
+        <a [routerLink]="['/book-details', 4]">
+          <img src="a-study-in-drowning.png" alt="A Study in Drowning">
+        </a>
         <h3>A Study in Drowning</h3>
         <p class="book-author">Ava Reid</p>
         <p class="book-price">₱690.00</p>
@@ -73,7 +79,9 @@
       </div>
 
       <div class="book-card">
-        <img src="the-night-circus.png" alt="The Night Circus">
+        <a [routerLink]="['/book-details', 5]">
+          <img src="the-night-circus.png" alt="The Night Circus">
+        </a>
         <h3>The Night Circus</h3>
         <p class="book-author">Erin Morgenster</p>
         <p class="book-price">₱750.00</p>
@@ -86,7 +94,9 @@
       <div class="book-page">
 
         <div class="book-card">
-          <img src="the-book-thief.png" alt="The Book Thief">
+          <a [routerLink]="['/book-details', 6]">
+            <img src="the-book-thief.jpg" alt="The Book Thief">
+          </a>
           <h3>The Book Thief</h3>
           <p class="book-author">Markus Zusak</p>
           <p class="book-price">₱680.00</p>
@@ -94,7 +104,9 @@
         </div>
 
         <div class="book-card">
-          <img src="normal-people.png" alt="Normal People">
+          <a [routerLink]="['/book-details', 7]">
+            <img src="normal-people.jpg" alt="Normal People">
+          </a>
           <h3>Normal People</h3>
           <p class="book-author">Sally Rooney</p>
           <p class="book-price">₱690.00</p>
@@ -102,7 +114,9 @@
         </div>
 
         <div class="book-card">
-          <img src="the-invisible-life.png" alt="The Invisible Life of Addie LaRue">
+          <a [routerLink]="['/book-details', 8]">
+            <img src="the-invisible-life.jpg" alt="The Invisible Life of Addie LaRue">
+          </a>
           <h3>The Invisible Life of Addie LaRue</h3>
           <p class="book-author">V.E. Schwab</p>
           <p class="book-price">₱720.00</p>
@@ -110,7 +124,9 @@
         </div>
 
         <div class="book-card">
-          <img src="before-the-coffee-gets-cold.png" alt="Before the Coffee Gets Cold">
+          <a [routerLink]="['/book-details', 9]">
+            <img src="before-the-coffee-gets-cold.jpg" alt="Before the Coffee Gets Cold">
+          </a>
           <h3>Before the Coffee Gets Cold</h3>
           <p class="book-author">Toshikazu Kawaguchi</p>
           <p class="book-price">₱650.00</p>
@@ -118,7 +134,9 @@
         </div>
 
         <div class="book-card">
-          <img src="the-stationery-shop.png" alt="The Stationery Shop">
+          <a [routerLink]="['/book-details', 10]">
+            <img src="the-stationery-shop.jpg" alt="The Stationery Shop">
+          </a>
           <h3>The Stationery Shop</h3>
           <p class="book-author">Marjan Kamali</p>
           <p class="book-price">₱710.00</p>
@@ -169,8 +187,10 @@
         <!-- PAGE 1 -->
         <div class="book-page">
 
-                <div class="book-card">
-        <img src="fourth-wing.png" alt="Fourth Wing">
+      <div class="book-card">
+        <a [routerLink]="['/book-details', 11]">
+          <img src="fourth-wing.png" alt="Fourth Wing">
+        </a>
         <h3>Fourth Wing</h3>
         <p class="book-author">Rebecca Yarros</p>
         <p class="book-price">₱780.00</p>
@@ -179,7 +199,9 @@
 
 
       <div class="book-card">
-        <img src="the-cruel-prince.png" alt="The Cruel Prince">
+        <a [routerLink]="['/book-details', 12]">
+          <img src="the-cruel-prince.png" alt="The Cruel Prince">
+        </a>
         <h3>The Cruel Prince</h3>
         <p class="book-author">Holly Black</p>
         <p class="book-price">₱650.00</p>
@@ -188,7 +210,9 @@
 
 
       <div class="book-card">
-        <img src="the-love-hypothesis.png" alt="The Love Hypothesis">
+        <a [routerLink]="['/book-details', 13]">
+          <img src="the-love-hypothesis.png" alt="The Love Hypothesis">
+        </a>
         <h3>The Love Hypothesis</h3>
         <p class="book-author">Ali Hazelwood</p>
         <p class="book-price">₱680.00</p>
@@ -197,7 +221,9 @@
 
 
       <div class="book-card">
-        <img src="pride-and-prejudice.png" alt="Pride and Prejudice">
+        <a [routerLink]="['/book-details', 14]">
+          <img src="pride-and-prejudice.png" alt="Pride and Prejudice">
+        </a>
         <h3>Pride and Prejudice</h3>
         <p class="book-author">Jane Austen</p>
         <p class="book-price">₱690.00</p>
@@ -206,7 +232,9 @@
 
 
       <div class="book-card">
-        <img src="powerless.png" alt="Powerless">
+        <a [routerLink]="['/book-details', 15]">
+          <img src="powerless.png" alt="Powerless">
+        </a>
         <h3>Powerless</h3>
         <p class="book-author">Lauren Roberts</p>
         <p class="book-price">₱720.00</p>
@@ -220,7 +248,9 @@
         <div class="book-page">
 
           <div class="book-card">
-            <img src="caraval.png" alt="Caraval">
+            <a [routerLink]="['/book-details', 16]">
+              <img src="caraval.jpg" alt="Caraval">
+            </a>
             <h3>Caraval</h3>
             <p class="book-author">Stephanie Garber</p>
             <p class="book-price">₱700.00</p>
@@ -228,7 +258,9 @@
           </div>
 
           <div class="book-card">
-            <img src="once-upon-a-broken-heart.png" alt="Once Upon a Broken Heart">
+            <a [routerLink]="['/book-details', 17]">
+              <img src="once-upon-a-broken-heart.jpg" alt="Once Upon a Broken Heart">
+            </a>
             <h3>Once Upon a Broken Heart</h3>
             <p class="book-author">Stephanie Garber</p>
             <p class="book-price">₱730.00</p>
@@ -236,7 +268,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-inheritance-games.png" alt="The Inheritance Games">
+            <a [routerLink]="['/book-details', 18]">
+              <img src="the-inheritance-games.jpg" alt="The Inheritance Games">
+            </a>
             <h3>The Inheritance Games</h3>
             <p class="book-author">Jennifer Lynn Barnes</p>
             <p class="book-price">₱680.00</p>
@@ -244,7 +278,9 @@
           </div>
 
           <div class="book-card">
-            <img src="red-white-royal-blue.png" alt="Red White & Royal Blue">
+            <a [routerLink]="['/book-details', 19]">
+              <img src="red-white-royal-blue.jpg" alt="Red White & Royal Blue">
+            </a>
             <h3>Red, White & Royal Blue</h3>
             <p class="book-author">Casey McQuiston</p>
             <p class="book-price">₱690.00</p>
@@ -252,7 +288,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-ballad-of-songbirds-and-snakes.png" alt="The Ballad of Songbirds and Snakes">
+            <a [routerLink]="['/book-details', 20]">
+              <img src="the-ballad-of-songbirds-and-snakes.jpg" alt="The Ballad of Songbirds and Snakes">
+            </a>
             <h3>The Ballad of Songbirds and Snakes</h3>
             <p class="book-author">Suzanne Collins</p>
             <p class="book-price">₱750.00</p>
@@ -304,7 +342,9 @@
         <div class="book-page">
 
           <div class="book-card">
-            <img src="harry-potter.png" alt="Harry Potter and the Philosopher's Stone">
+            <a [routerLink]="['/book-details', 21]">
+              <img src="harry-potter.png" alt="Harry Potter and the Philosopher's Stone">
+            </a>
             <h3>Harry Potter and the Philosopher's Stone</h3>
             <p class="book-author">J.K. Rowling</p>
             <p class="book-price">₱750.00</p>
@@ -312,7 +352,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-house.png" alt="The House in the Cerulean Sea">
+            <a [routerLink]="['/book-details', 22]">
+              <img src="the-house.png" alt="The House in the Cerulean Sea">
+            </a>
             <h3>The House in the Cerulean Sea</h3>
             <p class="book-author">T.J. Klune</p>
             <p class="book-price">₱680.00</p>
@@ -320,7 +362,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-alchemist.png" alt="The Alchemist">
+            <a [routerLink]="['/book-details', 23]">
+              <img src="the-alchemist.png" alt="The Alchemist">
+            </a>
             <h3>The Alchemist</h3>
             <p class="book-author">Paulo Coelho</p>
             <p class="book-price">₱550.00</p>
@@ -328,7 +372,9 @@
           </div>
 
           <div class="book-card">
-            <img src="atomic-habits.png" alt="Atomic Habits">
+            <a [routerLink]="['/book-details', 24]">
+              <img src="atomic-habits.png" alt="Atomic Habits">
+            </a>
             <h3>Atomic Habits</h3>
             <p class="book-author">James Clear</p>
             <p class="book-price">₱690.00</p>
@@ -336,7 +382,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-seven-husbands.png" alt="The Seven Husbands of Evelyn Hugo">
+            <a [routerLink]="['/book-details', 25]">
+              <img src="the-seven-husbands.png" alt="The Seven Husbands of Evelyn Hugo">
+            </a>
             <h3>The Seven Husbands of Evelyn Hugo</h3>
             <p class="book-author">Taylor Jenkins Reid</p>
             <p class="book-price">₱720.00</p>
@@ -349,7 +397,9 @@
         <div class="book-page">
 
           <div class="book-card">
-            <img src="it-ends-with-us.png" alt="It Ends with Us">
+            <a [routerLink]="['/book-details', 26]">
+              <img src="it-ends-with-us.jpg" alt="It Ends with Us">
+            </a>
             <h3>It Ends with Us</h3>
             <p class="book-author">Colleen Hoover</p>
             <p class="book-price">₱690.00</p>
@@ -357,7 +407,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-perks-of-being-a-wallflower.png" alt="The Perks of Being a Wallflower">
+            <a [routerLink]="['/book-details', 27]">
+              <img src="the-perks-of-being-a-wallflower.jpg" alt="The Perks of Being a Wallflower">
+            </a>
             <h3>The Perks of Being a Wallflower</h3>
             <p class="book-author">Stephen Chbosky</p>
             <p class="book-price">₱650.00</p>
@@ -365,7 +417,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-fault-in-our-stars.png" alt="The Fault in Our Stars">
+            <a [routerLink]="['/book-details', 28]">
+              <img src="the-fault-in-our-stars.jpg " alt="The Fault in Our Stars">
+            </a>
             <h3>The Fault in Our Stars</h3>
             <p class="book-author">John Green</p>
             <p class="book-price">₱680.00</p>
@@ -373,7 +427,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-hunger-games.png" alt="The Hunger Games">
+            <a [routerLink]="['/book-details', 29]">
+              <img src="the-hunger-games.jpg" alt="The Hunger Games">
+            </a>
             <h3>The Hunger Games</h3>
             <p class="book-author">Suzanne Collins</p>
             <p class="book-price">₱720.00</p>
@@ -381,7 +437,9 @@
           </div>
 
           <div class="book-card">
-            <img src="the-little-prince.png" alt="The Little Prince">
+            <a [routerLink]="['/book-details', 30]">
+              <img src="the-little-prince.jpg" alt="The Little Prince">
+            </a>
             <h3>The Little Prince</h3>
             <p class="book-author">Antoine de Saint-Exupéry</p>
             <p class="book-price">₱550.00</p>
